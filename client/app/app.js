@@ -11,6 +11,10 @@ angular.module('session2App', [
     $routeProvider
       .otherwise({
         redirectTo: '/'
+      })
+      .when('/', {
+        templateUrl: 'main.html',
+        controller: 'MainCtrl'    
       });
 
     $locationProvider.html5Mode(true);
