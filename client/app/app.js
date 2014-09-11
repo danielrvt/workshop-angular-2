@@ -12,6 +12,6 @@ angular.module('session2App', [
     $routeProvider
       .otherwise({
         redirectTo: '/'
-      });
+      })
     $locationProvider.html5Mode(true);
   });

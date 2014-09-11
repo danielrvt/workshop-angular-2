@@ -1,0 +1,23 @@
+<div class="container">
+<br/>
+<div class="col-md-4 col-md-offset-4 jumbotron" style="min-height:500px">
+
+    <h3>Seleccione montos</h3>
+    Cuenta Origen: <b>{{source.label}}</b>
+     
+    <ul class="list-group" style="overflow-y:scroll">
+        <li class="list-group-item" ng-repeat="destination in selectedInstruments">
+            <div class="row">
+                <div class="col-sm-6 text-left">
+                    {{destination.label}}
+                </div>
+                <div class="col-sm-6">
+                   <input type="text" class="form-control" ng-model="amount" ng-change="montoActualizado(amount)"/> 
+                </div>
+            </div>
+        </li>
+    </ul>
+    
+    <button class="btn btn-success" ng-click="transferClick()">Transferir</button>
+</div>
+</div>
