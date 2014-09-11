@@ -16,7 +16,7 @@ exports.index = function(req, res) {
      }); 
   } else {
       res.json({
-          "cuentas-propias":[{id: "ds65f", label: "Cuenta Corriente"}, {id:"df12g", label:"Cuenta de Ahorros"}], 
+          "cuentas-propias":[{id: "ds65f", label: "Cuenta Corriente", balance: 123.33}, {id:"df12g", label:"Cuenta de Ahorros", balance: 6544.23}], 
           "tarjetas-propias": [{id: "kjh324", label: "Tarjeta Dorada", saldo_actual: 123.21, pago_total: 32.2234, disponible: 400.34}], 
           "cuentas-terceros": [{id: "ds65f", label: "Cuenta Corriente"}, {id:"df12g", label:"Cuenta de Ahorros"}, {id:"df12g", label:"Cuenta de Ahorros"}]
       });

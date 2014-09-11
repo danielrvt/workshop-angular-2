@@ -5,17 +5,13 @@ angular.module('session2App', [
   'ngResource',
   'ngSanitize',
   'ngRoute',
-  'ui.bootstrap'
+  'ui.bootstrap',
+  'checklist-model'
 ])
   .config(function ($routeProvider, $locationProvider) {
     $routeProvider
       .otherwise({
         redirectTo: '/'
-      })
-      .when('/', {
-        templateUrl: 'main.html',
-        controller: 'MainCtrl'    
       });
-
     $locationProvider.html5Mode(true);
   });
