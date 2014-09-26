@@ -3,10 +3,6 @@
 
     var app = angular.module('taskApp', []);
 
-    app.controller('NewController', function ($scope, StorageService) {
-        
-    });
-
     app.service('StorageService', function ($http) {
 
         this.save = function (key, value) {
